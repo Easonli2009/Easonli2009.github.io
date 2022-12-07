@@ -983,7 +983,7 @@ btnPlay.addEventListener('click', async function() {
 			i.imageC = true;
 			i.imageU = true;
 		}
-		const qqqq=chartify();
+		const qqqq=chartify(charts.get(selectchart.value));
 		console.log(qqqq);
 		for (const i of chartLineData) {
 			if (selectchart.value === i.Chart) {
