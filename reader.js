@@ -119,7 +119,7 @@ export function readZip(result, {
 	const tl = urls['jszip'].reverse()[0];
 	if (!self._zip_worker) {
 		onloadstart();
-		const worker = new Worker(`./zip.js#${tl}`); //以后考虑indexedDB存储url
+		const worker = new Worker(`./zip.js`); //以后考虑indexedDB存储url
 		let total = 0;
 		worker.addEventListener('message', async msg => {
 			/** @type {{data:{name:string,path:string,buffer:ArrayBuffer},total:number}} */
