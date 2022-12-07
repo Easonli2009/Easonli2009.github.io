@@ -121,7 +121,6 @@ class Stat {
 class Renderer {
 	constructor(stage) {
 		if (!(stage instanceof HTMLDivElement)) throw new Error('Not a container');
-		chartify();
 		this.stage = stage;
 		this.canvas = document.createElement('canvas');
 		this.ctx = this.canvas.getContext('2d'); //游戏界面(alpha:false会出现兼容问题)
