@@ -381,17 +381,8 @@ function resizeStage() {
 				selectchart.appendChild(createOption(data.name, data.name));
 				break;
 			default:
-				if (data.msg) data.msg.forEach(v => msgHandler.sendWarning(v));
-				if (data.info) chartInfoData.push(data.info);
-				if (data.line) chartLineData.push(...data.line);
-				charts.set(data.name, data.data);
-				chartsMD5.set(data.name, data.md5);
-				selectchart.appendChild(createOption(data.name, data.name));
-				break;
-				/*
 				console.error(data.data);
 				msgHandler.sendWarning(`不支持的文件：${data.name}`);
-				*/
 		}
 		console.log(date.type);
 		msgHandler.sendMessage(`读取文件：${++uploader_done}/${uploader_total}`);
