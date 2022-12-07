@@ -4,7 +4,8 @@ importScripts(...location.hash.substring(1).split(','));
 function readZip(data) { //JSZip
 	JSZip.loadAsync(data.buffer, { checkCRC32: true, decodeFileName: string }).then(zip => {
 		console.log(zip);
-		const arr = Object.values(zip.files).filter(i => !i.dir);
+		const arr = Object.values(zip.files).filter(i => !i.dir)
+		let total = 0;
 		total += arr.length - 1;
 		arr.forEach(async i => {
 			const buffer = await i.async('arraybuffer');
