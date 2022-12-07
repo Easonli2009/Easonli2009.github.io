@@ -28,6 +28,7 @@ for (const i of $('view-nav').children) {
 	});
 }
 $('cover-dark').addEventListener('click', () => {
+	console.log(chartify());
 	$('cover-dark').classList.add('fade');
 	$('cover-view').classList.add('fade');
 });
