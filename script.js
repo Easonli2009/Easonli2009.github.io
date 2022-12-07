@@ -1,4 +1,4 @@
-import simphi from './simphi.js';
+import {simphi,chartify} from './simphi.js';
 import { full, Timer, getConstructorName, urls, isUndefined, loadJS, audio, frameTimer, time2Str } from './common.js';
 import { uploader, readZip } from './reader.js';
 self._i = ['Phi\x67ros模拟器', [1, 4, 22, 'b12'], 1611795955, 1669554066];
