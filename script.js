@@ -981,8 +981,6 @@ btnPlay.addEventListener('click', async function() {
 			i.imageC = true;
 			i.imageU = true;
 		}
-		const qqqq=chartify(charts.get(selectchart.value));
-		console.log(qqqq);
 		for (const i of chartLineData) {
 			if (selectchart.value === i.Chart) {
 				if (!app.lines[i.LineId]) { msgHandler.sendWarning(`指定id的判定线不存在：${i.LineId}`); continue; }
