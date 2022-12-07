@@ -1,6 +1,4 @@
 let energy = 0;
-const qq=chartify();
-console.log(qq);
 class Stat {
 	constructor() {
 		this.level = 0;
