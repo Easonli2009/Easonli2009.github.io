@@ -78,7 +78,7 @@ class Stat {
 			textAboveColor: '#65fe43',
 			textAboveStr: '  ( Speed {SPEED}x )',
 			textBelowColor: '#fe4365',
-			textBelowStr: 'AUTO PLAY',
+			textBelowStr: 'Combo',
 		};
 		if (isAuto) return Object.assign(pbj, { newBestColor: '#fff', newBestStr: 'BEST', scoreDelta: '' });
 		if (this.lineStatus === 1) return Object.assign(pbj, { textBelowStr: 'ALL  PERFECT', textBelowColor: '#ffc500' });
@@ -121,6 +121,7 @@ class Stat {
 class Renderer {
 	constructor(stage) {
 		if (!(stage instanceof HTMLDivElement)) throw new Error('Not a container');
+		chartify();
 		this.stage = stage;
 		this.canvas = document.createElement('canvas');
 		this.ctx = this.canvas.getContext('2d'); //游戏界面(alpha:false会出现兼容问题)
