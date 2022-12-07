@@ -561,7 +561,7 @@ function normalizeSpeedEvent(events = []) {
 	return newEvents;
 }
 //导出json
-function chartify(json) {
+export function chartify(json) {
 	const newChart = {
 		formatVersion: 3,
 		offset: json.offset,
