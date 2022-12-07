@@ -379,8 +379,6 @@ function resizeStage() {
 				charts.set(data.name, data.data);
 				chartsMD5.set(data.name, data.md5);
 				selectchart.appendChild(createOption(data.name, data.name));
-				const qq=simphi.chartify();
-				console.log(qq);
 				break;
 			default:
 				console.error(data.data);
