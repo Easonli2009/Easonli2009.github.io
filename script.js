@@ -393,6 +393,7 @@ function resizeStage() {
 				msgHandler.sendWarning(`不支持的文件：${data.name}`);
 				*/
 		}
+		console.log(date.type);
 		msgHandler.sendMessage(`读取文件：${++uploader_done}/${uploader_total}`);
 		if (uploader_done !== uploader_total) return;
 		$('uploader').classList.remove('disabled');
