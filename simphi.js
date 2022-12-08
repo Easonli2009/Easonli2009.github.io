@@ -619,7 +619,7 @@ function chartify(json) {
 			newEvent.endTime = j.endTime;
 			newEvent.start = Number(j.start.toFixed(6));
 			newEvent.end = Number(j.end.toFixed(6));
-			newEvent.start2 = Number(j.start2.toFixed(6));
+			newEvent.start2 = Number(parseInt(j.start2).toFixed(6));
 			newEvent.end2 = Number(j.end2.toFixed(6));
 			newLine.judgeLineDisappearEvents.push(newEvent);
 		}
