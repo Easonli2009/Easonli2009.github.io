@@ -237,7 +237,7 @@ class Renderer {
 	}
 	//note预处理
 	prerenderChart(chart) {
-		const qq=chartify(new Chart(chart));
+		const qq=chartify(chart);
 		console.log(qq);
 		this.lines.length = 0;
 		this.notes.length = 0;
