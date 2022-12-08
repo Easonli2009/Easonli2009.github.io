@@ -588,8 +588,8 @@ function chartify(json) {
 			let newEvent = {};
 			newEvent.startTime = j.startTime;
 			newEvent.endTime = j.endTime;
-			newEvent.value = Number(j.value.toFixed(6));
 			newEvent.floorPosition = Number(j.floorPosition.toFixed(6));
+			newEvent.value = Number(j.value.toFixed(6));
 			newLine.speedEvents.push(newEvent);
 		}
 		for (const j of i.notesAbove) {
